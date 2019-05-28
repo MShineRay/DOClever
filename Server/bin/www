@@ -15,7 +15,7 @@ var arrScoket=[];
 util.event.on("init",function () {
     var config=require("../../config.json")
     var addClient=require("../socket/doc")
-    var port = normalizePort(process.env.PORT || config.port?config.port:10000);
+    var port = normalizePort(process.env.PORT || config.port?config.port:3000);
     app.set('port', port);
     var server = http.createServer(app);
     var io=require("socket.io")(server);
